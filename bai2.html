@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //chèn dấu "-" vào 2 số chẵn
+        let string= prompt('xin nhap chuoi');
+        let result =[];
+       for(let i=0; i<string.length; i++){
+            if(string[i] % 2== 0 && string[i+1] %2==0){
+                result.push(string[i] + "-")
+            }
+            else{
+                result.push(string[i])
+            }
+       }
+       console.log(result.join(""));
+    </script>
+</body>
+</html>

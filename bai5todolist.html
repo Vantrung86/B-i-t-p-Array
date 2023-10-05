@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let todoList = ["quét nhà","nấu cơm","giặt quần áo"];
+        let string = prompt("Mời nhập C,R,U,D");
+        if(string == "C"){
+            let newString = prompt("Thêm công việc");
+            todoList.push(newString);
+            console.log(todoList);
+        }
+        else if(string == "R"){
+            console.log(todoList);
+        }
+        else if(string == "U"){
+            let index = +prompt("Vị trí phần tử muốn update");
+            let content = prompt("Nội dung muốn update");
+            todoList.splice(index,1,content);
+            console.log(todoList);
+        }
+        else if(string == "D"){
+            let index = +prompt("Vị trí phần tử muốn Delete");
+            todoList.splice(index,1);
+            console.log(todoList);
+        }
+        else{
+            console.log("Vui lòng nhập đúng CRUD");
+        }
+    </script>
+</body>
+</html>

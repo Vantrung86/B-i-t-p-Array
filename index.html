@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!--
+            Mang: la 1 kieu dl trong js dung de chua nhieu gia tri khac nhau.
+            I-primitive: kieu dl nguyen thuy(number, string...)
+            II- kieu phuc tap: reference type: array, function, object
+            III.
+            1.Cach khai bao Mang
+            2.Cach lay cac phan tu trong mang
+            - Phan tu dau tien co chi muc la 0
+            - Ten mang [index];
+            - Thuoc tinh length: la do dai cua mang or cac phan tu trong mang
+            3.CRUD voi mang bang cach dung cac phuong thuc lam viec voi mang
+            -C: create: them moi phan tu trong mang
+                +push(): them phan tu vao cuoi mang
+                +unshift(): phuong thuc them phan tu vao dau mang
+            -R: read: doc hay lay ra cac phan tu trong mang
+                +Dung vong lap de lay ra cac phan tu trong mang
+                +For:
+                +for-in(): tra ve index(các chỉ mục trong mảng)
+                +for-of(): tra ve gia tri
+            -U: update: cap nhat cac gia tri trong mang
+                +Dung splice
+                +Dung tenmang[index]=gia tri moi
+            -D: Delete: xoa phan tu trong mang
+                +pop(): xoa phan tu cuoi
+                +shift(): xoa phan tu dau
+                +splice(1.1)
+            4.Cac phuong thuc hay dung trong mang
+                1: reverse(): dao nguoc cac phan tu trong mang
+                2.join(): gộp các p/t trong mảng thành chuỗi
+                3.slice(start,end): sao chép ra mảng mới, cắt mảng
+                4.indexof: kiểm tra phần tử có trong mảng ko(ko có trả về -1; có trả về index)
+                5.includes: kiểm tra p/t có trong mảng ko(trả về true/false)
+                6.concat: gộp mảng    vd: mang1.concat(mang2)
+                7.sort(): sắp xếp p/t trong mảng theo bảng ASSCI
+                8.filter(): lọc
+                9.map(): duyệt mảng trả về số p/t = p/t ban đầu
+                10.forEach(): duyệt mảng tương tác trực tiếp các phần tử trong mảng
+                11.reduce(): tính toán
+                .....
+            5. Các phương thức hay dùng trong chuỗi
+                1.split(): cắt chuỗi thành mảng
+                2.charAt(): lấy ký tự thứ index
+                3. có thể dùng for(length)
+                4. slice có thể dùng với chuỗi còn splice thì không
+                5. trim(): loại bỏ khoảng trắng 2 đầu
+        -->
+    <script>
+        // let users = [];
+        // let users = new Array();
+        // let users=["nguyen van A", "nguyen van B", 5, [], {}];
+        // console.log(users[1]);
+        // console.log(users.length);
+
+        // let students = ["hoa", "lan"];
+        // students.push("hong", "minh");
+        // console.log(students);
+        // students.unshift("an");
+        // console.log(students);
+        // students.splice(1,0,"trung");
+        // console.log(students);
+        // let students = ["hoa", "lan", "hong"];
+        // for (let i = 0; i < students.length; i++) {
+        //     console.log(students[i]);
+        // }
+
+        // let students = ["hoa", "lan", "hong"];
+        // for (const an in students) {
+        //     console.log(an);
+        //     console.log(students[an]);
+        // }
+
+        // let students = ["hoa", "lan", "hong"];
+        // for (const an of students) {
+        //     console.log(an);     
+        // }
+
+        // let students = ["hoa", "lan", "hong"];
+        // // students.slice(1,1,"trung");
+        // students[1]="trung"
+        // console.log(students);
+
+        // let arr="trung"
+        // let result=arr.charAt(3)
+        // console.log(result);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = prompt('Nhập vào mảng');
+        let result = numbers.split(",");
+        console.log(result);
+        let max = result[0];
+        for(let i=1; i< result.length; i++){
+            if(max < +result[i]){
+                max = +result[i]
+            }
+        }
+        console.log("Số lớn nhất trong mảng là",max);
+    </script>
+</body>
+</html>

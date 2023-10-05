@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let count =0;
+        while(count < 10){
+            let string = +prompt("Mời nhập số");
+            arr.push(string);
+            count++;
+        }
+        console.log(arr);
+        let newArr = [];
+        dem = 0;
+        for(let i=0; i<arr.length; i++){
+            if(arr[i] >= 10){
+                dem++;
+                newArr.push(arr[i]);
+            }
+        }
+        console.log(`${newArr} có ${dem} số lớn hơn hoặc bằng 10`);
+    </script>
+</body>
+</html>
